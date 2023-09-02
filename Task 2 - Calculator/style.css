@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background: url('https://img.pikbest.com/backgrounds/v3/20190917/technological-background-with-different-data-calculations-background_1554056.jpg!bw340');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.calc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    width: 66px;
+    padding: 25px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.row {
+    margin: 8px 0;
+}
+
+.row input {
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-family: cursive;
+    font-size: 20px;
+}

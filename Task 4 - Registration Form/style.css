@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rancho', cursive;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form {
+    width: 850px;
+    max-width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 5px;
+    accent-color: #4E4FEB;
+}
+
+.check-box-group>div {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: #dfe313;
+}
+
+label,
+span {
+    color: #EDE4FF;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+.addr {
+    border: 0;
+}
+
+.modal-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 100%;
+    height: 120vh;
+    display: none;
+}
+
+.modal-body .modal-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 500px;
+    max-width: 95%;
+    padding: 18px;
+    border-radius: 10px;
+    animation: animate 2s linear;
+}
+
+@keyframes animate {
+    from {
+        top: -400px;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+
+@media (max-width: 890px) {
+    .check-box-group {
+        width: 120%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 0;
+    }
+    
+    .modal-body{
+        width: 100%;
+    }
+}
